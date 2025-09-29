@@ -1,7 +1,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   color: #0c0c0c;
-  background-color: #ffffff;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 
 .layout_padding {
@@ -43,7 +43,8 @@ body {
 
 /*header section*/
 .hero_area {
-  height: calc(100vh - 30px);
+  height: auto;
+  min-height: calc(100vh - 30px);
   background: -webkit-gradient(linear, left top, right top, color-stop(55%, #1a2e35), color-stop(55%, #1cbbb4));
   background: linear-gradient(to right, #1a2e35 55%, #1cbbb4 55%);
   display: -webkit-box;
@@ -54,6 +55,8 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .sub_page .hero_area {
@@ -300,6 +303,7 @@ a:focus {
 
 .slider_section .carousel_btn-container {
   width: 120px;
+  max-width: 100%;
   position: absolute;
   bottom: 0;
   display: -webkit-box;
@@ -318,7 +322,9 @@ a:focus {
 .slider_section .carousel_btn-container .carousel-control-next {
   position: relative;
   width: 55px;
+  max-width: 45px;
   height: 55px;
+  max-height: 45px;
   border: none;
   border-radius: 100%;
   opacity: 1;
@@ -332,6 +338,16 @@ a:focus {
 .slider_section .carousel_btn-container .carousel-control-prev:hover,
 .slider_section .carousel_btn-container .carousel-control-next:hover {
   background-color: #ff4f5a;
+}
+
+.slider_section .detail-box h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.slider_section .detail-box p {
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 .slider_section .carousel_btn-container .carousel-control-prev {
@@ -816,6 +832,57 @@ a:focus {
 }
 
 /* end footer section*/
+
+/* Custom colorful styles */
+.about_section {
+  background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+  color: #333;
+}
+
+.skills_section {
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+}
+
+.skill-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  color: white !important;
+}
+
+.skill-card i {
+  color: #ffd700 !important;
+}
+
+.youtube_section {
+  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+}
+
+.youtube-card {
+  background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%) !important;
+  color: #333 !important;
+}
+
+.projects_section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.project-card {
+  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%) !important;
+  color: #333 !important;
+}
+
+.contact_section {
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+}
+
+.footer_section {
+  background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%) !important;
+  color: #333 !important;
+}
+
+.footer_section a {
+  color: #333 !important;
+}
 #navbarSupportedContent {
   -webkit-transform: translateX(100vw);
           transform: translateX(100vw);
